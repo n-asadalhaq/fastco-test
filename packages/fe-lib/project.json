@@ -1,0 +1,16 @@
+{
+  "name": "fe-lib",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/fe-lib/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/fe-lib/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

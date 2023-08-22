@@ -1,0 +1,50 @@
+{
+  "name": "part-5-be",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/part-5-be/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "target": "node",
+        "compiler": "tsc",
+        "outputPath": "dist/packages/part-5-be",
+        "main": "packages/part-5-be/src/main.ts",
+        "tsConfig": "packages/part-5-be/tsconfig.app.json",
+        "assets": ["packages/part-5-be/src/assets"],
+        "isolatedConfig": true,
+        "webpackConfig": "packages/part-5-be/webpack.config.js"
+      },
+      "configurations": {
+        "development": {},
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "part-5-be:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "part-5-be:build:development"
+        },
+        "production": {
+          "buildTarget": "part-5-be:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/part-5-be/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}

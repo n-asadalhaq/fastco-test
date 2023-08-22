@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  part-1-mongodb:
+    container_name: part-1-mongodb
+    image: mongo:jammy
+    ports:
+      - '27017:27017'
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: secret

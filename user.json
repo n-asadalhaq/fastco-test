@@ -1,0 +1,48 @@
+[
+  {
+    "_id": {
+      "$oid": "6120e49c8a6a4a7f53e73301"
+    },
+    "email": "mark@example.com",
+    "name": "Mark Tawin",
+    "age": 77,
+    "status": "active"
+  },
+  {
+    "_id": {
+      "$oid": "6120e49c8a6a4a7f53e73302"
+    },
+    "email": "jane@example.com",
+    "name": "Jane Austen",
+    "age": 35,
+    "status": "active"
+  },
+  {
+    "_id": {
+      "$oid": "6120e49c8a6a4a7f53e73303"
+    },
+    "email": "fyodor@example.com",
+    "name": "Fyodor Dostoevsky",
+    "age": 22,
+    "status": "inactive"
+  },
+  {
+    "_id": {
+      "$oid": "6120e49c8a6a4a7f53e73304"
+    },
+    "email": "harper@example.com",
+    "name": "Harper lee",
+    "age": 40,
+    "status": "inactive"
+  },
+  {
+    "_id": {
+      "$oid": "6120e49c8a6a4a7f53e73305"
+    },
+    "email": "paulo@example.com",
+    "name": "Paulo Coelho",
+    "age": 31,
+    "status": "active"
+  }
+]
+
